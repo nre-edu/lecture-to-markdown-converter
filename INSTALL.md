@@ -70,6 +70,6 @@ Pass the single-file text as the system prompt (system message). No discovery me
 
 | Skill | Zip (paths A, skills upload) | Text-only zip (no code) | Single-file text (paths D, E) | Cursor rule (path C) |
 |---|---|---|---|---|
-| `lecture-to-markdown-converter` | https://raw.githubusercontent.com/nre-edu/lecture-to-markdown-converter/main/install/lecture-to-markdown-converter.zip (8 KB) | — | https://raw.githubusercontent.com/nre-edu/lecture-to-markdown-converter/main/install/lecture-to-markdown-converter.md (1,595 words) | https://raw.githubusercontent.com/nre-edu/lecture-to-markdown-converter/main/install/lecture-to-markdown-converter.mdc |
+| `lecture-to-markdown-converter` | https://raw.githubusercontent.com/nre-edu/lecture-to-markdown-converter/main/install/lecture-to-markdown-converter.zip (9 KB) | — | https://raw.githubusercontent.com/nre-edu/lecture-to-markdown-converter/main/install/lecture-to-markdown-converter.md (1,814 words) | https://raw.githubusercontent.com/nre-edu/lecture-to-markdown-converter/main/install/lecture-to-markdown-converter.mdc |
 
 These links follow branch `main`, which always holds the latest version. For a fixed version, replace `main` in these URLs with a release tag or commit hash.

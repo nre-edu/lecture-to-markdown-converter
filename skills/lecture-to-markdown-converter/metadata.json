@@ -1,6 +1,6 @@
 {
   "name": "lecture-to-markdown-converter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Converts lecture and course files (PDF or slide decks, one merged file or several separate ones) into a complete, 100% verbatim Markdown reference with no summarizing or omission, split by explicit start/end tags so any LLM can retrieve a single lecture, reading all text inside images, diagrams and tables, plus a separate full-course mind map (Mermaid + tree). Use when the user asks to transcribe lectures, convert a whole course file to Markdown without dropping a word, prepare lecture content for an LLM, or cross-check separate lecture files against a merged one (e.g. 'فرّغ المحاضرات', 'حوّل ملف المقرر إلى ماركداون كاملًا', 'جهّز المحاضرات للذكاء الاصطناعي مع خريطة ذهنية'). Do not use for summarizing lectures, making study notes or quizzes, or converting a single short non-lecture document.",
   "language": "ar",
   "license": "MIT",
@@ -26,7 +26,7 @@
     {
       "file": "references/transcription-rules.md",
       "title": "Transcription Rules",
-      "summary": "Visual inspection over OCR, verbatim rules for text, typos, tables, diagrams and sample documents, and common gotchas. Read in steps 1-2."
+      "summary": "Optional MarkItDown first text layer (only if already installed), mandatory visual inspection over OCR, verbatim rules for text, typos, tables, diagrams and sample documents, and common gotchas. Read in steps 1-2."
     },
     {
       "file": "references/output-structure.md",

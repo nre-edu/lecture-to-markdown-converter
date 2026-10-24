@@ -39,10 +39,12 @@ An AI skill that converts lecture and course files (PDF or slide decks, merged o
 
 ## What it does | ماذا تفعل
 
+- If [MarkItDown](https://github.com/microsoft/markitdown) is already installed, uses it as a first text layer for cross-checking; it never installs it, and visual inspection stays mandatory either way.
 - Inspects every page and slide visually, not by OCR alone, and cross-checks a merged file against separate lecture files to catch missing lectures or slides.
 - Transcribes text, pictured tables, diagrams and sample documents verbatim, flagging source typos instead of silently fixing them.
 - Delivers **two files**: `محاضرات_<course>_كاملة.md` (navigation guide, index table, start/end tags per lecture, a marker per slide) and `الخريطة_الذهنية_لمحاضرات_<course>.md` (Mermaid `mindmap` + detailed tree).
 
+- إن كانت أداة MarkItDown مثبتة تستعملها طبقةً أولى للنص للمطابقة فقط، ولا تثبّتها بنفسها، ويبقى الفحص البصري إلزاميًا في الحالتين.
 - تفحص كل صفحة وشريحة بصريًا لا بنص OCR وحده، وتطابق الملف المجمّع بالملفات المنفردة لاكتشاف ما سقط.
 - تفرّغ النصوص والجداول المصوّرة والمخططات والنماذج حرفيًا، وتشير إلى أخطاء المصدر بدل تصحيحها بصمت.
 - تسلّم **ملفين**: ملف المحاضرات الكامل، وملف الخريطة الذهنية.
@@ -67,6 +69,7 @@ install/                           # zip, single-file text, Cursor rule (generat
 |---|---|
 | Structure validated with [skill-foundry](https://github.com/nre-nec/skill-foundry) `validate --strict` | Passed (2026-10-24) |
 | Ported from a Gemini-specific version: removed `allowed-tools: default_api google`, `google:show_file` and a fixed output path | Done (2026-10-24) |
+| MarkItDown text layer (v1.1.0): used only if already installed, never installed by the agent | Added (2026-10-24); behaviour with MarkItDown not yet verified |
 | Trigger tests in `tests/triggers.json` run in a live environment | Not yet verified |
 | Behaviour tested end-to-end on Claude Code / Claude.ai / ChatGPT / Gemini | Not yet verified |
 
