@@ -1,0 +1,37 @@
+{
+  "name": "lecture-to-markdown-converter",
+  "version": "1.0.0",
+  "description": "Converts lecture and course files (PDF or slide decks, one merged file or several separate ones) into a complete, 100% verbatim Markdown reference with no summarizing or omission, split by explicit start/end tags so any LLM can retrieve a single lecture, reading all text inside images, diagrams and tables, plus a separate full-course mind map (Mermaid + tree). Use when the user asks to transcribe lectures, convert a whole course file to Markdown without dropping a word, prepare lecture content for an LLM, or cross-check separate lecture files against a merged one (e.g. 'فرّغ المحاضرات', 'حوّل ملف المقرر إلى ماركداون كاملًا', 'جهّز المحاضرات للذكاء الاصطناعي مع خريطة ذهنية'). Do not use for summarizing lectures, making study notes or quizzes, or converting a single short non-lecture document.",
+  "language": "ar",
+  "license": "MIT",
+  "entry_points": {
+    "skill": "SKILL.md"
+  },
+  "triggers": {
+    "use_when": [
+      "Convert a whole lecture or course file (PDF or slides) to Markdown without dropping a word",
+      "Transcribe slides containing images, diagrams, pictured tables or sample documents verbatim",
+      "Split lectures inside one file with tags so an LLM can retrieve a single lecture",
+      "Cross-check separate lecture files against a merged file to find missing lectures or slides",
+      "Produce a full-course mind map alongside the verbatim transcription"
+    ],
+    "do_not_use_when": [
+      "Summarizing lectures or writing a review summary (do it directly)",
+      "Making quizzes, flashcards or simplified explanations",
+      "Converting a short non-lecture document (letter, invoice, article) to Markdown",
+      "A mind map alone with no transcription requested"
+    ]
+  },
+  "references": [
+    {
+      "file": "references/transcription-rules.md",
+      "title": "Transcription Rules",
+      "summary": "Visual inspection over OCR, verbatim rules for text, typos, tables, diagrams and sample documents, and common gotchas. Read in steps 1-2."
+    },
+    {
+      "file": "references/output-structure.md",
+      "title": "Output Structure",
+      "summary": "Structure of the lectures file (navigation guide, index, start/end tags, slide markers) and the mind-map file, plus Mermaid rules. Read in steps 3-4."
+    }
+  ]
+}

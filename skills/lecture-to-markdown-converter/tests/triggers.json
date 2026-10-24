@@ -1,0 +1,13 @@
+{
+  "_note": "Manual trigger test set. Run each prompt against your target environment and record whether the skill activated.",
+  "should_trigger": [
+    "فرّغ لي ملف المحاضرات هذا كاملًا إلى ماركداون ولا تترك ولا كلمة، ومعه خريطة ذهنية",
+    "عندي ملف المقرر مجمع ومعه المحاضرات منفصلة، طابقهم وطلع لي ملف md فيه كل شيء",
+    "Convert this whole course PDF to Markdown verbatim, split by lecture so an LLM can pull any lecture, including text inside the slide images"
+  ],
+  "should_not_trigger": [
+    "لخّص لي المحاضرة الثالثة في نقاط للمراجعة",
+    "اعمل لي خريطة ذهنية لهذا الفصل فقط",
+    "حوّل هذا الخطاب الإداري إلى ماركداون"
+  ]
+}
