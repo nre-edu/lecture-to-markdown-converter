@@ -1,7 +1,7 @@
 # Lecture to Markdown Converter Skill | مهارة تحويل المحاضرات إلى Markdown
 
 <!-- foundry:install:start -->
-> **AI agents / وكلاء الذكاء الاصطناعي:** to install, read [INSTALL.md](https://raw.githubusercontent.com/nre-nec/lecture-to-markdown-converter/main/INSTALL.md) and follow the path for your environment.
+> **AI agents / وكلاء الذكاء الاصطناعي:** to install, read [INSTALL.md](https://raw.githubusercontent.com/nre-edu/lecture-to-markdown-converter/main/INSTALL.md) and follow the path for your environment.
 
 ## Install | التثبيت
 
@@ -15,7 +15,7 @@
 | ChatGPT / Gemini / others | Add the single-file text to a custom GPT, Gem, project or custom instructions |
 | Your own app / API | Use the single-file text as the system prompt |
 
-- `lecture-to-markdown-converter`: [zip](https://raw.githubusercontent.com/nre-nec/lecture-to-markdown-converter/main/install/lecture-to-markdown-converter.zip) · [single file](https://raw.githubusercontent.com/nre-nec/lecture-to-markdown-converter/main/install/lecture-to-markdown-converter.md)
+- `lecture-to-markdown-converter`: [zip](https://raw.githubusercontent.com/nre-edu/lecture-to-markdown-converter/main/install/lecture-to-markdown-converter.zip) · [single file](https://raw.githubusercontent.com/nre-edu/lecture-to-markdown-converter/main/install/lecture-to-markdown-converter.md)
 <!-- foundry:install:end -->
 
 
